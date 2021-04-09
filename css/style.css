@@ -9,3 +9,7 @@
     grid-template-columns: auto auto;
     background-color: dimgrey;
 }
+
+.project-container{
+    background-color: peru;
+}
