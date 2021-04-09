@@ -5,7 +5,7 @@
 
 .project-tile{
     display: grid;
-    gap: 20x 30x;
+    gap: 20px 30px;
     grid-template-columns: auto auto;
     background-color: dimgrey;
 }
