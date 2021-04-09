@@ -2,3 +2,10 @@
     height: 100vh;
     background-color: #00ffff;
 }
+
+.project-tile{
+    display: grid;
+    grid-gap: 20x 20x;
+    grid-template-columns: auto auto;
+    background-color: dimgrey;
+}
