@@ -7,9 +7,9 @@
     display: grid;
     gap: 20px 30px;
     grid-template-columns: auto auto;
-    background-color: dimgrey;
+    background-color: #b12a2a;
 }
 
 .project-container{
-    background-color: peru;
+    background-color: rgb(228, 119, 9);
 }
