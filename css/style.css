@@ -1,6 +1,7 @@
 .welcome{
     height: 100vh;
     background-color: #00ffff;
+    text-align: center;
 }
 
 .project-tile{
