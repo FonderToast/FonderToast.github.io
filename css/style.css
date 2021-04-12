@@ -1,3 +1,15 @@
+.welcome::before{
+    content: "";
+    height: 100vh; 
+    width: 100%;
+    position: absolute;
+    top: -10%;
+    left: 0;
+    z-index: -1;
+    background-image: url(..Img\background.png);
+    background-size: cover
+}
+
 .welcome{
     height: 100vh;
     width: 100%;
@@ -10,17 +22,6 @@ h1 {
     color: rgb(255, 255, 255);
 }
 
-.welcome::before{
-    content: "";
-    height: 100vh; 
-    width: 100%;
-    position: absolute;
-    top: -10%;
-    left: 0;
-    z-index: -1;
-    background-image: url(..Img\background.png);
-    background-size: cover
-}
 
 .welcome-text{
     position: absolute;
