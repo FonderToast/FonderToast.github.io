@@ -16,8 +16,8 @@ h1 {
     top: -10%;
     left: 0;
     z-index: -1;
-    background: url(Img\background.png);
-    background-size: cover;
+    background: url(..Img\background.png);
+    background-size: cover
 }
 
 .welcome-text{
