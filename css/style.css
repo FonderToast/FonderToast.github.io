@@ -4,6 +4,15 @@
     
 }
 
+h1 {
+    color: rgb(0, 0, 0);
+}
+
+.welcome::before{
+    background-image: url( Img\istockphoto-1151621528-612x612.jpg );
+    background-size: cover
+}
+
 .welcome-text{
     position: absolute;
     top: 50%;
