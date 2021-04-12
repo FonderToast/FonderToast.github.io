@@ -1,12 +1,15 @@
 .welcome{
     height: 100vh;
     background-color: #57c53c;
+    
+}
+
+.welcome-text{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    
 }
 
 .project-tile{
