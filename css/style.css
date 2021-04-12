@@ -9,7 +9,7 @@ h1 {
 }
 
 .welcome::before{
-    background-image: url( Img\istockphoto-1151621528-612x612.jpg );
+    background-image: url( https://www.google.no/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Ffire-background&psig=AOvVaw3kD3Y_Sk7Q89Ma6wy9VHFw&ust=1618307392706000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJCRo8LE-O8CFQAAAAAdAAAAABAD );
     background-size: cover
 }
 
