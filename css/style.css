@@ -6,8 +6,10 @@
     top: -10%;
     left: 0;
     z-index: -1;
-    background-image: url(../Img/background.png);
+    background-image: url(../Img/OIP.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
+    opacity: 0.8;
 }
 
 .welcome{
