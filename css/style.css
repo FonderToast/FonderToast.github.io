@@ -81,7 +81,7 @@ h1 {
     background-image: linear-gradient(#f31af747,white);
     height: 100vh;
     display: grid;
-    gap: 20px 30px;
+    gap: 20px 20px;
     grid-template-columns: auto auto;
 }
 
