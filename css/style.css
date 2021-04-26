@@ -77,7 +77,7 @@ h1 {
 }
 
 .project-tile{
-    background-image: linear-gradient(#f31af747,whitesmoke);
+    background-image: linear-gradient(#f31af747,white);
     height: 100vh;
     display: grid;
     gap: 20px 30px;
