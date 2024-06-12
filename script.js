@@ -84,7 +84,7 @@ function updateStatsWindow() {
 
 window.onload = function() {
     const main = document.getElementById('main-window');
-    main.style.display = 'none';
+    main.style.display = 'block';  // Display the main window immediately
 
     const statsWindow = document.getElementById('stats-window');
     statsWindow.style.display = 'none';
