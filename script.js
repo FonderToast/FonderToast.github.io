@@ -32,7 +32,6 @@ const animationDuration = 6000;  // 6 seconds
 function startAnimation() {
     const slotImage = document.getElementById('slot-image');
     const slotName = document.getElementById('slot-name');
-    const slotsSpun = document.getElementById('slots-spun');
     const randomizeButton = document.getElementById('randomize-button');
     randomizeButton.disabled = true;
 
@@ -48,8 +47,6 @@ function startAnimation() {
         };
         const name = decodeURIComponent(choice.split('/').pop().split('.')[0].replace(/%20/g, ' '));
         slotName.textContent = name;
-        slotStats[name] = (slotStats[name] || 0) + 1;
-        slotsSpun.textContent = 'Slots Spun: ' + Object.values(slotStats).reduce((a, b) => a + b, 0);
     }
 
     function animate() {
@@ -60,11 +57,19 @@ function startAnimation() {
             setTimeout(animate, delay);
         } else {
             randomizeButton.disabled = false;
+            const lastSlotName = slotName.textContent;
+            slotStats[lastSlotName] = (slotStats[lastSlotName] || 0) + 1;
+            updateSlotsSpun();
             updateStatsWindow();  // Update stats window after animation completes
         }
     }
     
     animate();
+}
+
+function updateSlotsSpun() {
+    const slotsSpun = document.getElementById('slots-spun');
+    slotsSpun.textContent = 'Slots Spun: ' + Object.values(slotStats).reduce((a, b) => a + b, 0);
 }
 
 function toggleStats() {
@@ -75,13 +80,10 @@ function toggleStats() {
     }
 }
 
-function closeApp() {
-    window.close();
-}
-
 function resetStats() {
     slotStats = {};
     updateStatsWindow();
+    updateSlotsSpun();
 }
 
 function hideStats() {
@@ -93,10 +95,11 @@ function updateStatsWindow() {
     const statsContainer = document.getElementById('stats-container');
     statsContainer.innerHTML = '';
 
-    for (const slot in slotStats) {
+    const lastSlotName = document.getElementById('slot-name').textContent;
+    if (slotStats[lastSlotName]) {
         const statLabel = document.createElement('p');
         statLabel.className = 'stats-label';
-        statLabel.textContent = `${slot}: ${slotStats[slot]}`;
+        statLabel.textContent = `${lastSlotName}: ${slotStats[lastSlotName]}`;
         statsContainer.appendChild(statLabel);
     }
 }
