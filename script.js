@@ -20,8 +20,6 @@ const animationDuration = 6000;  // 6 seconds
 
 function startAnimation() {
     const main = document.getElementById('main-window');
-    const splash = document.getElementById('splash-screen');
-    splash.style.display = 'none';
     main.style.display = 'block';
 
     const slotImage = document.getElementById('slot-image');
@@ -30,11 +28,15 @@ function startAnimation() {
     const randomizeButton = document.getElementById('randomize-button');
     randomizeButton.disabled = true;
 
+    // Reset animation counter
+    animationCounter = 0;
+
     function pickSlot() {
         const choice = slotImages[Math.floor(Math.random() * slotImages.length)];
         slotImage.src = 'Slot Pickers/' + choice;
         slotName.textContent = choice.split('.')[0];
-        slotsSpun.textContent = 'Slots Spun: ' + (++slotStats[choice] || 1);
+        slotStats[choice] = (slotStats[choice] || 0) + 1;
+        slotsSpun.textContent = 'Slots Spun: ' + slotStats[choice];
     }
 
     function animate() {
@@ -50,13 +52,15 @@ function startAnimation() {
         }
     }
     
-
     animate();
 }
 
 function toggleStats() {
     const statsWindow = document.getElementById('stats-window');
     statsWindow.style.display = statsWindow.style.display === 'block' ? 'none' : 'block';
+    if (statsWindow.style.display === 'block') {
+        updateStatsWindow();
+    }
 }
 
 function closeApp() {
@@ -80,12 +84,13 @@ function updateStatsWindow() {
     for (const slot in slotStats) {
         const statLabel = document.createElement('p');
         statLabel.className = 'stats-label';
-        statLabel.textContent = `${slot}: ${slotStats[slot]}`;
+        statLabel.textContent = `${slot.split('.')[0]}: ${slotStats[slot]}`;
         statsContainer.appendChild(statLabel);
     }
 }
 
 window.onload = function() {
+    console.log('Window loaded');
     const main = document.getElementById('main-window');
     main.style.display = 'block';  // Display the main window immediately
 
