@@ -1,7 +1,18 @@
 let slotStats = {};
 let slotImages = [
     'Gates.png', 'Starlight.png', 'Retro Tapes.png',
-    // Add more slot images here...
+    'Nightmares vs gigablox.png', 'Pirots 2.png', 'Mental.png',
+    'Big bass Amazon XTREME.png', 'Curse of the werewolf.png', 'Athena.png',
+    'Sky Bounty.png', 'Dog House.png', 'Mochimon.png',
+    'Dog House Multi Hold.png', 'Firebird Spirit.png', 'Dinopolis.png',
+    'Oxygen.png', 'Happy Hooves.png', 'Big bass secrets of the golden lake.png',
+    'Gates 1000.png', 'Starlight 1000.png', 'Sugar Supreme.png',
+    'Sweet Bonanza.png', 'Sugar Rush.png', 'Sugar Rush 1000.png',
+    'Frog Blox.png', 'Brick Snake 2000.png', 'Gems Bonanza.png',
+    'Release the bison.png', 'Curse of Ra.png', 'Stackem.png',
+    'Le Bandit.png', 'Zeus vs Hades.png', 'Loki.png',
+    '5 wild buffalo.png', 'Wildies.png', 'Pirots 3.png',
+    'Temple of paw.png', 'Buffalo King Megaways.png'
 ];
 
 let animationCounter = 0;
