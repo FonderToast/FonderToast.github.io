@@ -11,19 +11,19 @@ let slotNames = [
 ];
 
 let slotImages = [
-    'FonderToast.github.io/Gates.png', 'FonderToast.github.io/Starlight.png', 'FonderToast.github.io/Retro Tapes.png',
-    'FonderToast.github.io/Nightmares vs gigablox.png', 'FonderToast.github.io/Pirots 2.png', 'FonderToast.github.io/Mental.png',
-    'FonderToast.github.io/Big bass Amazon XTREME.png', 'FonderToast.github.io/Curse of the werewolf.png', 'FonderToast.github.io/Athena.png',
-    'FonderToast.github.io/Sky Bounty.png', 'FonderToast.github.io/Dog House.png', 'FonderToast.github.io/Mochimon.png',
-    'FonderToast.github.io/Dog House Multi Hold.png', 'FonderToast.github.io/Firebird Spirit.png', 'FonderToast.github.io/Dinopolis.png',
-    'FonderToast.github.io/Oxygen.png', 'FonderToast.github.io/Happy Hooves.png', 'FonderToast.github.io/Big bass secrets of the golden lake.png',
-    'FonderToast.github.io/Gates 1000.png', 'FonderToast.github.io/Starlight 1000.png', 'FonderToast.github.io/Sugar Supreme.png',
-    'FonderToast.github.io/Sweet Bonanza.png', 'FonderToast.github.io/Sugar Rush.png', 'FonderToast.github.io/Sugar Rush 1000.png',
-    'FonderToast.github.io/Frog Blox.png', 'FonderToast.github.io/Brick Snake 2000.png', 'FonderToast.github.io/Gems Bonanza.png',
-    'FonderToast.github.io/Release the bison.png', 'FonderToast.github.io/Curse of Ra.png', 'FonderToast.github.io/Stackem.png',
-    'FonderToast.github.io/Le Bandit.png', 'FonderToast.github.io/Zeus vs Hades.png', 'FonderToast.github.io/Loki.png',
-    'FonderToast.github.io/5 wild buffalo.png', 'FonderToast.github.io/Wildies.png', 'FonderToast.github.io/Pirots 3.png',
-    'FonderToast.github.io/Temple of paw.png', 'FonderToast.github.io/Buffalo King Megaways.png'
+    'Img/Gates.png', 'Img/Starlight.png', 'Img/Retro Tapes.png',
+    'Img/Nightmares vs gigablox.png', 'Img/Pirots 2.png', 'Img/Mental.png',
+    'Img/Big bass Amazon XTREME.png', 'Img/Curse of the werewolf.png', 'Img/Athena.png',
+    'Img/Sky Bounty.png', 'Img/Dog House.png', 'Img/Mochimon.png',
+    'Img/Dog House Multi Hold.png', 'Img/Firebird Spirit.png', 'Img/Dinopolis.png',
+    'Img/Oxygen.png', 'Img/Happy Hooves.png', 'Img/Big bass secrets of the golden lake.png',
+    'Img/Gates 1000.png', 'Img/Starlight 1000.png', 'Img/Sugar Supreme.png',
+    'Img/Sweet Bonanza.png', 'Img/Sugar Rush.png', 'Img/Sugar Rush 1000.png',
+    'Img/Frog Blox.png', 'Img/Brick Snake 2000.png', 'Img/Gems Bonanza.png',
+    'Img/Release the bison.png', 'Img/Curse of Ra.png', 'Img/Stackem.png',
+    'Img/Le Bandit.png', 'Img/Zeus vs Hades.png', 'Img/Loki.png',
+    'Img/5 wild buffalo.png', 'Img/Wildies.png', 'Img/Pirots 3.png',
+    'Img/Temple of paw.png', 'Img/Buffalo King Megaways.png'
 ];
 
 let animationCounter = 0;
