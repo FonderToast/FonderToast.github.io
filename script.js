@@ -1,4 +1,5 @@
 let slotStats = {};
+let chosenSlots = [];
 let slotNames = [
     'Gates', 'Starlight', 'Retro Tapes', 'Nightmares vs gigablox', 'Pirots 2',
     'Mental', 'Big bass Amazon XTREME', 'Curse of the werewolf', 'Athena',
@@ -59,6 +60,7 @@ function startAnimation() {
             randomizeButton.disabled = false;
             const lastSlotName = slotName.textContent;
             slotStats[lastSlotName] = (slotStats[lastSlotName] || 0) + 1;
+            chosenSlots.push(lastSlotName);  // Add to chosen slots list
             updateSlotsSpun();
             updateStatsWindow();  // Update stats window after animation completes
         }
@@ -82,6 +84,7 @@ function toggleStats() {
 
 function resetStats() {
     slotStats = {};
+    chosenSlots = [];
     updateStatsWindow();
     updateSlotsSpun();
 }
@@ -101,6 +104,11 @@ function updateStatsWindow() {
         statLabel.textContent = `${slot}: ${slotStats[slot]}`;
         statsContainer.appendChild(statLabel);
     }
+
+    const chosenSlotsLabel = document.createElement('p');
+    chosenSlotsLabel.className = 'stats-label';
+    chosenSlotsLabel.textContent = 'Chosen Slots: ' + chosenSlots.join(', ');
+    statsContainer.appendChild(chosenSlotsLabel);
 }
 
 window.onload = function() {
