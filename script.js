@@ -44,8 +44,9 @@ function startAnimation() {
         slotImage.src = choice;
         slotImage.onerror = function() {
             console.error('Image not found: ' + slotImage.src);
+            slotImage.src = '';  // Reset the image src if not found
         };
-        const name = choice.split('/').pop().split('.')[0].replace(/%20/g, ' ');
+        const name = decodeURIComponent(choice.split('/').pop().split('.')[0].replace(/%20/g, ' '));
         slotName.textContent = name;
         slotStats[name] = (slotStats[name] || 0) + 1;
         slotsSpun.textContent = 'Slots Spun: ' + Object.values(slotStats).reduce((a, b) => a + b, 0);
