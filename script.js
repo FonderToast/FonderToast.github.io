@@ -38,15 +38,18 @@ function startAnimation() {
     }
 
     function animate() {
+        console.log('Animating...');
         if (animationCounter < animationDuration) {
             const delay = 100 + Math.floor(animationCounter / 15);
             pickSlot();
             animationCounter += delay;
             setTimeout(animate, delay);
         } else {
+            console.log('Animation completed.');
             randomizeButton.disabled = false;
         }
     }
+    
 
     animate();
 }
