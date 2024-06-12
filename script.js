@@ -77,6 +77,4 @@ window.onload = function() {
 
     const statsWindow = document.getElementById('stats-window');
     statsWindow.style.display = 'none';
-
-    const closeSplash = setTimeout(startAnimation, 1750);
 };
