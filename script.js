@@ -49,6 +49,7 @@ function startAnimation() {
         } else {
             console.log('Animation completed.');
             randomizeButton.disabled = false;
+            updateStatsWindow();  // Update stats window after animation completes
         }
     }
     
