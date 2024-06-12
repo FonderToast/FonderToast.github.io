@@ -95,11 +95,10 @@ function updateStatsWindow() {
     const statsContainer = document.getElementById('stats-container');
     statsContainer.innerHTML = '';
 
-    const lastSlotName = document.getElementById('slot-name').textContent;
-    if (slotStats[lastSlotName]) {
+    for (const slot in slotStats) {
         const statLabel = document.createElement('p');
         statLabel.className = 'stats-label';
-        statLabel.textContent = `${lastSlotName}: ${slotStats[lastSlotName]}`;
+        statLabel.textContent = `${slot}: ${slotStats[slot]}`;
         statsContainer.appendChild(statLabel);
     }
 }
