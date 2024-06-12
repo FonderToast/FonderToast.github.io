@@ -104,11 +104,6 @@ function updateStatsWindow() {
         statLabel.textContent = `${slot}: ${slotStats[slot]}`;
         statsContainer.appendChild(statLabel);
     }
-
-    const chosenSlotsLabel = document.createElement('p');
-    chosenSlotsLabel.className = 'stats-label';
-    chosenSlotsLabel.textContent = 'Chosen Slots: ' + chosenSlots.join(', ');
-    statsContainer.appendChild(chosenSlotsLabel);
 }
 
 window.onload = function() {
